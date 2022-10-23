@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contáctanos</title>
+	<style>
+		a {color: white;}
+
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><img class="logo"src="media/logo.jpg" alt="LogoDeEscuela"></a>
+		
+		<nav>
+			<li><a class="text-light" href="ourplans2.0.html">Escoge Tu plan</a></li>
+			<li><a class="text-light" href="aboutus2.0.html">Conócenos</a></li>
+			<li><a class="text-light" href="contactus2.0.html">Contáctanos!</a></li>
+
+	</nav>
+
+</div>
+
+<div class="body">
+	<H1>Cotiza tu fiesta</H1>
+	<div style="display:flex;">
+		<form  id="formulario">
+			<select class="btn btn-secondary dropdown-toggle" id="selector1">
+				<option value="1">Dj</option>
+				<option value="2">Parlantes</option>
+				<option value="3">Luces</option>
+				<option value="default" selected>Selecciona que deseas agregar</option>
+			  </select>
+		<select class="btn btn-secondary dropdown-toggle" id="selector2">
+			<option value="default" selected>Seleccione servicio a agregar</option>  
+				 </select>
+	
+			<input type="submit" class="btn btn-primary" value="Agregar" /></input>
+		  </form>
+		  <aside>
+			<button style="margin-left: 10px; margin-boTtom: 20px;" id="erase"class="btn btn-danger">Borrar</button>
+		  </aside>
+		</div>
+		  
+	<!-- 
+	Aquí irá la tabla que recaudará todos los precios a modo de cotización -->
+		<div id="cotización" >
+		  <div id="alerta"style="color: red; font-size: 10;"></div>
+			<table id="lista"class="table table-dark" style="background-color: gray;">
+
+	  <tfoot></tfoot>
+	</table> 
+
+	
+	
+		</div>
+	
+</div>
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+<footer class="footer">
+
+	<p>Lorem ipsum dj derechos reservados</p>
+	
+</footer>
+
+</html>
